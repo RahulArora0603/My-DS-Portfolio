@@ -142,21 +142,48 @@ body.dark .audio-wrap{
 .hero-content {
     max-width: 1200px;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .side-img {
     width: 180px;
     height: auto;
     border-radius: 12px;
+    margin-bottom: 1rem;
 }
 
 .center-text {
     flex: 1;
+    text-align: center;
+    margin: 0 1rem;
 }
+
 .fadednote{
   opacity: 0.5;
 }
 
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column; /* stack vertically */
+        align-items: center;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .side-img {
+        width: 60%; /* scale images for mobile */
+        margin-bottom: 1rem;
+    }
+
+    .center-text h1 {
+        font-size: 2rem;
+    }
+
+    .center-text p.lead {
+        font-size: 1rem;
+    }
+}
 
 /* ========== Sections ========== */
 section.py-5 { 
