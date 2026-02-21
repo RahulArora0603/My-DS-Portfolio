@@ -185,6 +185,78 @@ body.dark .audio-wrap{
     }
 }
 
+/*========== Navigation =========*/
+.portfolio-nav {
+    width: 100%;
+    max-width: 100%;
+    margin: 2.5rem auto 0;
+    margin-bottom: 15px;
+    padding: 0 2rem; /* breathing space from edges */
+}
+
+.nav-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.nav-btn {
+    width: 100%;                 /* fill grid cell */
+    padding: 20px 0;             /* tall buttons */
+    font-size: 1.15rem;
+    font-weight: 600;
+    border-radius: 14px;
+    text-decoration: none;
+    background: black;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;     /* perfect centering */
+
+    min-height: 68px;
+    transition: all 0.25s ease;
+}
+
+.nav-btn:hover {
+    background: #084298;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(13, 110, 253, 0.25);
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .portfolio-nav {
+        padding: 0 1.5rem;
+    }
+
+    .nav-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .portfolio-nav {
+        padding: 0 1rem;
+    }
+
+    .nav-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .nav-btn {
+        font-size: 1.05rem;
+        min-height: 60px;
+    }
+}
+
+
+
+
 /* ========== Sections ========== */
 section.py-5 { 
   padding-top:0px; 
